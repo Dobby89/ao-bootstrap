@@ -1,0 +1,15 @@
+{
+	"config": {
+		"lang": "en-GB",
+		"title": "AO Bootstrap"
+	},
+
+	"layout": [{
+		"sectionId": "navbar",
+		"templateId": "navbar"
+	},
+	{
+		"sectionId": "buttons",
+		"templateId": "buttons"
+	}]
+}
