@@ -91,6 +91,71 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
 	}
 }
 
+.btn-success {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(success), 10%);
+		border-color: lighten(theme-color(success), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(success), 10%);
+		border-color: lighten(theme-color(success), 10%);
+	}
+}
+
+.btn-info {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(info), 10%);
+		border-color: lighten(theme-color(info), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(info), 10%);
+		border-color: lighten(theme-color(info), 10%);
+	}
+}
+
+.btn-warning {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(warning), 10%);
+		color: #ffffff;
+		border-color: lighten(theme-color(warning), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(warning), 10%);
+		border-color: lighten(theme-color(warning), 10%);
+	}
+}
+
+.btn-danger {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(danger), 10%);
+		border-color: lighten(theme-color(danger), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(danger), 10%);
+		border-color: lighten(theme-color(danger), 10%);
+	}
+}
+
 // Typography ==================================================================
 
 // Tables ======================================================================
@@ -186,7 +251,10 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
 }
 
 .badge {
+	&-primary,
 	&-secondary,
+	&-success,
+	&-info,
 	&-warning {
 		color: #ffffff;
 	}
