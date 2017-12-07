@@ -68,7 +68,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 gulp.task('dev', ['templates', 'scss', 'scripts', 'images'], function() {
-	const apiProxy = proxy(['/HttpHandlers/EmailCommunicationHandler.ashx', '/ProductsHandler.axd', '/Themes', '/l/', '/product/'], {
+	const apiProxy = proxy(['/fonts', '/HttpHandlers/EmailCommunicationHandler.ashx', '/ProductsHandler.axd', '/Themes', '/l/', '/product/'], {
 		target: 'http://ao.com',
 		changeOrigin: true // for vhosted sites
 	});
