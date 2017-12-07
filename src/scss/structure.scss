@@ -12,6 +12,7 @@
 	src: url('/fonts/oz/AoOz-Regular.eot?') format('eot'), url('/fonts/oz/AoOz-Regular.woff') format('woff'), url('/fonts/oz/AoOz-Regular.ttf') format('truetype'), url('/fonts/oz/AoOz-Regular.svg') format('svg');
 }
 
+@import 'functions/rem-calc';
 @import 'ao-bootstrap-variables';
 
 // Overrides Bootstrap variableS
