@@ -40,7 +40,7 @@ $web-font-path: 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic'
 
 .btn {
 	line-height: 1;
-	font-size: 14px;
+	font-size: rem-calc(14);
 	cursor: pointer;
 
 	&:focus,

@@ -59,8 +59,10 @@ $table-accent-bg:             $gray-200 !default;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$input-btn-padding-y:         1rem !default;
-$input-btn-padding-x:         1rem !default;
+$input-btn-padding-y:			rem-calc(16) !default;
+$input-btn-padding-x:			rem-calc(16) !default;
+$btn-font-weight:				700;
+$btn-transition:				none;
 
 // Dropdowns
 
