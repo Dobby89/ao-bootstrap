@@ -1,0 +1,9 @@
+.table-rounded {
+	border-radius: .5rem;
+	overflow: hidden;
+}
+
+.table thead th {
+	vertical-align: top;
+	padding-bottom: $spacer * 1.5;
+}
