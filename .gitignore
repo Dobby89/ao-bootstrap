@@ -11,6 +11,5 @@ ehthumbs.db
 node_modules
 bower_components
 /build
-/dist
 package.json
 package-lock.json
