@@ -1,0 +1,14 @@
+{
+    "extends": "ao",
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "globals": {
+      "angular": true,
+      "$": true,
+      "DRLJs": true,
+      "newrelic": true
+    }
+  }
