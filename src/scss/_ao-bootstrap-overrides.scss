@@ -1,9 +1,18 @@
 // Variables ===================================================================
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
-	!default;
+// $web-font-path: '//ao.com/fonts/oz/AoOz-Bold.ttf' !default;
 
-@import url($web-font-path);
+// @import url($web-font-path);
+
+body {
+	// font-family: 'arial', sans-serif;
+	// font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	// font-family: 'oz';
+	// font-weight: 700;
+}
 
 body {
 	background-color: #f7f7f7;
@@ -52,13 +61,11 @@ body {
 	font-size: rem-calc(14);
 	cursor: pointer;
 
-	&:focus,
-	&.focus {
+	&:focus, &.focus {
 		box-shadow: none;
 	}
 
-	&:not([disabled]):not(.disabled):active,
-	&:not([disabled]):not(.disabled).active {
+	&:not([disabled]):not(.disabled):active, &:not([disabled]):not(.disabled).active {
 		box-shadow: none;
 	}
 }
@@ -71,9 +78,7 @@ body {
 		border-color: lighten(theme-color(primary), 10%);
 	}
 
-	&:not([disabled]):not(.disabled):active,
-	&:not([disabled]):not(.disabled).active,
-	.show > &.dropdown-toggle {
+	&:not([disabled]):not(.disabled):active, &:not([disabled]):not(.disabled).active, .show > &.dropdown-toggle {
 		background-color: lighten(theme-color(primary), 10%);
 		border-color: lighten(theme-color(primary), 10%);
 	}
@@ -87,9 +92,7 @@ body {
 		border-color: lighten(theme-color(secondary), 10%);
 	}
 
-	&:not([disabled]):not(.disabled):active,
-	&:not([disabled]):not(.disabled).active,
-	.show > &.dropdown-toggle {
+	&:not([disabled]):not(.disabled):active, &:not([disabled]):not(.disabled).active, .show > &.dropdown-toggle {
 		background-color: lighten(theme-color(secondary), 10%);
 		border-color: lighten(theme-color(secondary), 10%);
 	}
