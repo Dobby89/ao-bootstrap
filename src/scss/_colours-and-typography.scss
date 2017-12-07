@@ -1,0 +1,49 @@
+.colours-and-typography {
+	padding: 1.5rem;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section {
+	margin-top: 3rem;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+}
+
+.colour-swatches {
+	justify-content: space-around;
+}
+
+.clr {
+	&-swatch {
+		display: inline-block;
+		width: 5em;
+		height: 5em;
+		border-radius: 100%;
+	}
+
+	&-primary {
+		background-color: $primary;
+	}
+
+	&-secondary {
+		background-color: $secondary;
+	}
+
+	&-tertiary {
+		background-color: $tertiary;
+	}
+
+	&-quinary {
+		background-color: $quinary;
+	}
+
+	&-senary {
+		background-color: $senary;
+	}
+}

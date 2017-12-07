@@ -1,7 +1,23 @@
+@font-face {
+	font-family: 'oz';
+	font-weight: 700;
+	font-style: normal;
+	src: url('/fonts/oz/AoOz-Bold.eot?') format('eot'), url('/fonts/oz/AoOz-Bold.woff') format('woff'), url('/fonts/oz/AoOz-Bold.ttf') format('truetype'), url('/fonts/oz/AoOz-Bold.svg') format('svg');
+}
+
+@font-face {
+	font-family: 'oz';
+	font-weight: 400;
+	font-style: normal;
+	src: url('/fonts/oz/AoOz-Regular.eot?') format('eot'), url('/fonts/oz/AoOz-Regular.woff') format('woff'), url('/fonts/oz/AoOz-Regular.ttf') format('truetype'), url('/fonts/oz/AoOz-Regular.svg') format('svg');
+}
+
+@import 'functions/rem-calc';
+@import 'ao-bootstrap-variables';
+
 // Overrides Bootstrap variableS
 
 @import 'bootstrap/scss/functions';
-@import 'ao-bootstrap-variables';
 
 // Include all of Bootstrap
 
@@ -13,6 +29,7 @@
 @import 'bootstrap-tables';
 @import 'ao-bootstrap-overrides';
 
-// AO components
+// AO custom components
 
 @import 'ao-dashboard-head';
+@import 'colours-and-typography';
