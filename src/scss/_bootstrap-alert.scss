@@ -1,0 +1,16 @@
+.alert {
+	border: none;
+	color: $white;
+
+	.alert-link,
+	a {
+		text-decoration: underline;
+		color: #ffffff;
+	}
+
+	@each $color, $value in $theme-colors {
+		&-#{$color} {
+			background-color: $value;
+		}
+	}
+}

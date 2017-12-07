@@ -41,3 +41,34 @@
 		}
 	}
 }
+
+
+.nav-pills .nav-link {
+	background-color: #ffffff;
+	color: #596066;
+
+	&.active {
+		background-color: #f8fafa;
+		color: #0081b9;
+	}
+
+	&.dropdown-toggle {
+		color: #596066;
+	}
+}
+
+.nav-pills .show > .nav-link {
+	background-color: #f8fafa;
+	color: #0081b9;
+
+	.dropdown-item {
+		background-color: #f8fafa;
+		color: #0081b9;
+	}
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	background-color: #f8fafa;
+	color: #0081b9;
+}

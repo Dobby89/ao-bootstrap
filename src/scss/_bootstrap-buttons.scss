@@ -1,0 +1,112 @@
+.btn {
+	line-height: 1;
+	font-size: rem-calc(14);
+	cursor: pointer;
+
+	&:focus,
+	&.focus {
+		box-shadow: none;
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active {
+		box-shadow: none;
+	}
+}
+
+.btn-primary {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(primary), 10%);
+		border-color: lighten(theme-color(primary), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(primary), 10%);
+		border-color: lighten(theme-color(primary), 10%);
+	}
+}
+
+.btn-secondary {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(secondary), 10%);
+		border-color: lighten(theme-color(secondary), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(secondary), 10%);
+		border-color: lighten(theme-color(secondary), 10%);
+	}
+}
+
+.btn-success {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(success), 10%);
+		border-color: lighten(theme-color(success), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(success), 10%);
+		border-color: lighten(theme-color(success), 10%);
+	}
+}
+
+.btn-info {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(info), 10%);
+		border-color: lighten(theme-color(info), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(info), 10%);
+		border-color: lighten(theme-color(info), 10%);
+	}
+}
+
+.btn-warning {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(warning), 10%);
+		color: #ffffff;
+		border-color: lighten(theme-color(warning), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(warning), 10%);
+		border-color: lighten(theme-color(warning), 10%);
+	}
+}
+
+.btn-danger {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(danger), 10%);
+		border-color: lighten(theme-color(danger), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(danger), 10%);
+		border-color: lighten(theme-color(danger), 10%);
+	}
+}
