@@ -84,5 +84,8 @@
     "ios_saf >= 8",
     "Android >= 4.3",
     "> 1%"
-  ]
+  ],
+  "dependencies": {
+    "open-iconic": "^1.1.1"
+  }
 }
