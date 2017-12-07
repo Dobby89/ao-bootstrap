@@ -21,7 +21,8 @@ body {
 // Navbar =======================================================================
 
 .bg-primary {
-	.navbar-nav .active > .nav-link { // stylelint-disable-line selector-max-compound-selectors
+	.navbar-nav .active > .nav-link {
+		// stylelint-disable-line selector-max-compound-selectors
 		color: $success !important; // stylelint-disable-line declaration-no-important
 	}
 }
@@ -30,7 +31,10 @@ body {
 	background-color: $success !important; // stylelint-disable-line declaration-no-important
 
 	&.navbar-dark .navbar-nav {
-		.active > .nav-link, .nav-link:focus, .nav-link:hover { // stylelint-disable-line selector-max-compound-selectors
+		.active > .nav-link,
+		.nav-link:focus,
+		.nav-link:hover {
+			// stylelint-disable-line selector-max-compound-selectors
 			color: $primary !important; // stylelint-disable-line declaration-no-important
 		}
 	}
@@ -96,77 +100,76 @@ body {
 
 // Typography ==================================================================
 
-// Tables ======================================================================
-
-.table {
-	.thead-dark th {
-		background-color: $primary;
-	}
-
-	&-danger, &-info, &-success, &-warning {
-		color: #ffffff;
-	}
-
-	&-success {
-		> td, > th, & {
-			background-color: $success;
-		}
-	}
-
-	&-info {
-		> td, > th, & {
-			background-color: $info;
-		}
-	}
-
-	&-danger {
-		> td, > th, & {
-			background-color: $danger;
-		}
-	}
-
-	&-warning {
-		> td, > th, & {
-			background-color: $warning;
-		}
-	}
-
-	&-hover {
-		.table-success:hover {
-			> td, > th, & {
-				background-color: darken($success, 5%);
-			}
-		}
-
-		.table-info:hover {
-			> td, > th, & {
-				background-color: darken($info, 5%);
-			}
-		}
-
-		.table-danger:hover {
-			> td, > th, & {
-				background-color: darken($danger, 5%);
-			}
-		}
-
-		.table-warning:hover {
-			> td, > th, & {
-				background-color: darken($warning, 5%);
-			}
-		}
-	}
-}
-
 // Forms =======================================================================
 
 // Navs ========================================================================
 
 .nav-tabs {
-	.nav-item.open .nav-link, .nav-item.open .nav-link:focus, .nav-item.open .nav-link:hover, .nav-link.active, .nav-link.active:focus, .nav-link.active:hover {
+	border: solid 1px #eaedee;
+	.nav-item.open .nav-link,
+	.nav-item.open .nav-link:focus,
+	.nav-item.open .nav-link:hover,
+	.nav-link.active,
+	.nav-link.active:focus,
+	.nav-link.active:hover {
 		color: $primary;
 	}
 }
+
+.nav-pills .nav-item {
+	border: solid 1px #eaedee;
+
+	&:hover {
+		border: solid 1px #a8d9f4;
+	}
+}
+
+.nav-pills .nav-link {
+	background-color: #ffffff;
+	color: #596066;
+
+	&.active {
+		background-color: #f8fafa;
+		color: #0081b9;
+	}
+
+	&.dropdown-toggle {
+		color: #596066;
+	}
+}
+
+.nav-pills .show > .nav-link {
+	background-color: #f8fafa;
+	color: #0081b9;
+
+	.dropdown-item {
+		background-color: #f8fafa;
+		color: #0081b9;
+	}
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	background-color: #f8fafa;
+	color: #0081b9;
+}
+
+//Breadcrumbs ===================================================================
+
+.breadcrumb {
+	border: solid 1px #eaedee;
+	background-color: #ffffff;
+
+	.breadcrumb-item a {
+		color: #0081b9;;
+	}
+
+	&:hover {
+		border: solid 1px #a8d9f4;
+	}
+}
+
+//Pagination ===================================================================
 
 .pagination {
 	a:hover {
@@ -179,7 +182,7 @@ body {
 		.page-link {
 			border: solid 1px #eaeaea;
 			background-color: #ffffff;
-			color: #444444;
+			color: #596066;
 			border-radius: 2px;
 		}
 
@@ -209,13 +212,15 @@ body {
 	text-decoration: none;
 	opacity: 0.4;
 
-	&:focus, &:hover {
+	&:focus,
+	&:hover {
 		opacity: 1;
 	}
 }
 
 .badge {
-	&-secondary, &-warning {
+	&-secondary,
+	&-warning {
 		color: #ffffff;
 	}
 }
@@ -224,7 +229,8 @@ body {
 	border: none;
 	color: $white;
 
-	.alert-link, a {
+	.alert-link,
+	a {
 		text-decoration: underline;
 		color: #ffffff;
 	}
