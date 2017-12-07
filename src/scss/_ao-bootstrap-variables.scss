@@ -136,6 +136,12 @@ $input-height-inner-sm: auto;
 $input-height-inner-lg: auto;
 $nav-link-height: auto;
 
+$custom-control-indicator-checked-bg: $secondary;
+$custom-control-indicator-checked-box-shadow: $secondary;
+$custom-control-indicator-active-bg: $secondary;
+$custom-control-indicator-active-box-shadow: $secondary;
+// $custom-control-indicator-focus-box-shadow: $secondary;
+
 $table-dark-bg: #596066;
 $table-dark-border-color: #eaedee;
 $table-accent-bg: #f8fafa;
