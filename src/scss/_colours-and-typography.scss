@@ -1,0 +1,33 @@
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.clr {
+	&-swatch {
+		display: inline-block;
+		width: 10em;
+		height: 10em;
+		border-radius: 100%;
+	}
+
+	&-primary {
+		background-color: $primary;
+	}
+
+	&-secondary {
+		background-color: $secondary;
+	}
+
+	&-tertiary {
+		background-color: $tertiary;
+	}
+
+	&-quinary {
+		background-color: $quinary;
+	}
+
+	&-senary {
+		background-color: $senary;
+	}
+}
