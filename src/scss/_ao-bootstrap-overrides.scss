@@ -39,8 +39,50 @@ $web-font-path: 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic'
 // Buttons =====================================================================
 
 .btn {
-	&-secondary, &-secondary:hover, &-warning, &-warning:hover {
-		color: #ffffff;
+	line-height: 1;
+	font-size: 14px;
+	cursor: pointer;
+
+	&:focus,
+	&.focus {
+		box-shadow: none;
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active {
+		box-shadow: none;
+	}
+}
+
+.btn-primary {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(primary), 10%);
+		border-color: lighten(theme-color(primary), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(primary), 10%);
+		border-color: lighten(theme-color(primary), 10%);
+	}
+}
+
+.btn-secondary {
+	color: #ffffff;
+
+	&:hover {
+		background-color: lighten(theme-color(secondary), 10%);
+		border-color: lighten(theme-color(secondary), 10%);
+	}
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		background-color: lighten(theme-color(secondary), 10%);
+		border-color: lighten(theme-color(secondary), 10%);
 	}
 }
 
