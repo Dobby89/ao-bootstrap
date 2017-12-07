@@ -1,22 +1,9 @@
 // Variables ===================================================================
 
-// $web-font-path: '//ao.com/fonts/oz/AoOz-Bold.ttf' !default;
+$web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
+	!default;
 
-// @import url($web-font-path);
-
-body {
-	// font-family: 'arial', sans-serif;
-	// font-weight: 400;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	// font-family: 'oz';
-	// font-weight: 700;
-}
-
-body {
-	background-color: #f7f7f7;
-}
+@import url($web-font-path);
 
 // Navbar =======================================================================
 
@@ -61,11 +48,13 @@ body {
 	font-size: rem-calc(14);
 	cursor: pointer;
 
-	&:focus, &.focus {
+	&:focus,
+	&.focus {
 		box-shadow: none;
 	}
 
-	&:not([disabled]):not(.disabled):active, &:not([disabled]):not(.disabled).active {
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active {
 		box-shadow: none;
 	}
 }
@@ -78,7 +67,9 @@ body {
 		border-color: lighten(theme-color(primary), 10%);
 	}
 
-	&:not([disabled]):not(.disabled):active, &:not([disabled]):not(.disabled).active, .show > &.dropdown-toggle {
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
 		background-color: lighten(theme-color(primary), 10%);
 		border-color: lighten(theme-color(primary), 10%);
 	}
@@ -92,7 +83,9 @@ body {
 		border-color: lighten(theme-color(secondary), 10%);
 	}
 
-	&:not([disabled]):not(.disabled):active, &:not([disabled]):not(.disabled).active, .show > &.dropdown-toggle {
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active,
+	.show > &.dropdown-toggle {
 		background-color: lighten(theme-color(secondary), 10%);
 		border-color: lighten(theme-color(secondary), 10%);
 	}
@@ -100,29 +93,11 @@ body {
 
 // Typography ==================================================================
 
+// Tables ======================================================================
+
 // Forms =======================================================================
 
 // Navs ========================================================================
-
-.nav-tabs {
-	border: solid 1px #eaedee;
-	.nav-item.open .nav-link,
-	.nav-item.open .nav-link:focus,
-	.nav-item.open .nav-link:hover,
-	.nav-link.active,
-	.nav-link.active:focus,
-	.nav-link.active:hover {
-		color: $primary;
-	}
-}
-
-.nav-pills .nav-item {
-	border: solid 1px #eaedee;
-
-	&:hover {
-		border: solid 1px #a8d9f4;
-	}
-}
 
 .nav-pills .nav-link {
 	background-color: #ffffff;
@@ -157,16 +132,8 @@ body {
 //Breadcrumbs ===================================================================
 
 .breadcrumb {
-	border: solid 1px #eaedee;
-	background-color: #ffffff;
-
-	.breadcrumb-item a {
-		color: #0081b9;;
-	}
-
-	&:hover {
-		border: solid 1px #a8d9f4;
-	}
+    border: solid 1px #eaedee;
+    background-color: #ffffff;
 }
 
 //Pagination ===================================================================

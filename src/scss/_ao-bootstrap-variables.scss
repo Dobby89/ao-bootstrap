@@ -67,10 +67,12 @@ $table-accent-bg: $gray-200 !default;
 // Buttons
 // For each of Bootstrap's buttons, define text, background and border color
 
-$input-btn-padding-y: rem-calc(16) !default;
-$input-btn-padding-x: rem-calc(16) !default;
-$btn-font-weight: 700;
-$btn-transition: none;
+$input-btn-padding-y:			rem-calc(16) !default;
+$input-btn-padding-x:			rem-calc(16) !default;
+$btn-box-shadow:				none;
+$btn-active-box-shadow:			none;
+$btn-font-weight:				700;
+$btn-transition:				none;
 
 // Dropdowns
 
@@ -80,10 +82,12 @@ $dropdown-link-hover-bg: $primary !default;
 
 // Navs
 
-$nav-link-padding-y: 0.5rem !default !default;
-$nav-link-padding-x: 2rem !default;
-$nav-link-disabled-color: $gray-600 !default !default;
-$nav-tabs-border-color: $gray-200 !default;
+$nav-link-padding-y:                .5rem !default !default;
+$nav-link-padding-x:                2rem !default;
+$nav-link-disabled-color:           $gray-600 !default !default;
+
+$nav-tabs-border-color:             $gray-200 !default;
+$nav-tabs-link-active-color:        $secondary !default;
 
 // Navbar
 

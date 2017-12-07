@@ -1,0 +1,43 @@
+.nav-tabs {
+	margin-right: -2px;
+	margin-left: -2px;
+
+	.nav-item {
+		margin-right: 2px;
+		margin-left: 2px;
+
+		&.show {
+			.nav-link {
+				color: $gray-700;
+			}
+		}
+	}
+
+	.nav-item.open .nav-link, .nav-item.open .nav-link:focus, .nav-item.open .nav-link:hover, .nav-link.active, .nav-link.active:focus, .nav-link.active:hover {
+		color: $secondary;
+	}
+
+	.nav-link {
+		border: 1px solid $nav-tabs-link-active-border-color;
+		background-color: $gray-100;
+		color: $gray-700;
+
+		&.disabled {
+			border: 1px solid $nav-tabs-link-active-border-color;
+		}
+
+		&.active {
+			border-bottom: 1px solid $body-bg;
+
+			&:focus,
+			&:hover {
+				border-bottom: 1px solid $body-bg;
+			}
+		}
+
+		&:focus,
+		&:hover {
+			border: 1px solid $nav-tabs-link-active-border-color;
+		}
+	}
+}

@@ -84,5 +84,6 @@
     "ios_saf >= 8",
     "Android >= 4.3",
     "> 1%"
-  ]
+  ],
+  "dependencies": {}
 }
