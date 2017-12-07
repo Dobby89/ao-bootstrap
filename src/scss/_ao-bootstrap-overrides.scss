@@ -19,10 +19,6 @@ h6 {
 	// font-weight: 700;
 }
 
-body {
-	background-color: #f7f7f7;
-}
-
 // Navbar =======================================================================
 
 .bg-primary {
@@ -86,8 +82,7 @@ body {
 	}
 
 	&:not([disabled]):not(.disabled):active,
-	&:not([disabled]):not(.disabled).active,
-	.show > &.dropdown-toggle {
+	&:not([disabled]):not(.disabled).active {
 		background-color: lighten(theme-color(primary), 10%);
 		border-color: lighten(theme-color(primary), 10%);
 	}
@@ -102,8 +97,7 @@ body {
 	}
 
 	&:not([disabled]):not(.disabled):active,
-	&:not([disabled]):not(.disabled).active,
-	.show > &.dropdown-toggle {
+	&:not([disabled]):not(.disabled).active {
 		background-color: lighten(theme-color(secondary), 10%);
 		border-color: lighten(theme-color(secondary), 10%);
 	}
@@ -111,106 +105,57 @@ body {
 
 // Typography ==================================================================
 
-// Tables ======================================================================
-
-.table {
-	.thead-dark th {
-		background-color: $primary;
-	}
-
-	&-danger,
-	&-info,
-	&-success,
-	&-warning {
-		color: #ffffff;
-	}
-
-	&-success {
-		> td,
-		> th,
-		& {
-			background-color: $success;
-		}
-	}
-
-	&-info {
-		> td,
-		> th,
-		& {
-			background-color: $info;
-		}
-	}
-
-	&-danger {
-		> td,
-		> th,
-		& {
-			background-color: $danger;
-		}
-	}
-
-	&-warning {
-		> td,
-		> th,
-		& {
-			background-color: $warning;
-		}
-	}
-
-	&-hover {
-		.table-success:hover {
-			> td,
-			> th,
-			& {
-				background-color: darken($success, 5%);
-			}
-		}
-
-		.table-info:hover {
-			> td,
-			> th,
-			& {
-				background-color: darken($info, 5%);
-			}
-		}
-
-		.table-danger:hover {
-			> td,
-			> th,
-			& {
-				background-color: darken($danger, 5%);
-			}
-		}
-
-		.table-warning:hover {
-			> td,
-			> th,
-			& {
-				background-color: darken($warning, 5%);
-			}
-		}
-	}
-}
-
 // Forms =======================================================================
 
 // Navs ========================================================================
 
 .nav-tabs {
-	border: solid 1px #eaedee;
-	.nav-item.open .nav-link,
-	.nav-item.open .nav-link:focus,
-	.nav-item.open .nav-link:hover,
-	.nav-link.active,
-	.nav-link.active:focus,
-	.nav-link.active:hover {
-		color: $primary;
+	margin-right: -2px;
+	margin-left: -2px;
+	border-bottom: 1px solid $nav-tabs-link-active-border-color;
+
+	.nav-item {
+		margin-right: 2px;
+		margin-left: 2px;
+
+		&.show {
+			.nav-link {
+				color: $gray-700;
+			}
+		}
+	}
+
+	.nav-item.open .nav-link, .nav-item.open .nav-link:focus, .nav-item.open .nav-link:hover, .nav-link.active, .nav-link.active:focus, .nav-link.active:hover {
+		color: $secondary;
+	}
+
+	.nav-link {
+		border: 1px solid $nav-tabs-link-active-border-color;
+		background-color: $gray-100;
+		color: $gray-700;
+
+		&.disabled {
+			border: 1px solid $nav-tabs-link-active-border-color;
+		}
+
+		&.active {
+			border-bottom: 1px solid $body-bg;
+
+			&:focus,
+			&:hover {
+				border-bottom: 1px solid $body-bg;
+			}
+		}
+
+		&:focus,
+		&:hover {
+			border: 1px solid $nav-tabs-link-active-border-color;
+		}
 	}
 }
 
-.nav-pills {
-	.nav-item {
-		border: solid 1px #eaedee;
+.nav-pills .nav-item {
+	border: solid 1px #eaedee;
 
 		&:hover {
 			border: solid 1px #a8d9f4;
@@ -251,8 +196,8 @@ body {
 //Breadcrumbs ===================================================================
 
 .breadcrumb {
-	border: solid 1px #eaedee;
-	background-color: #ffffff;
+    border: solid 1px #eaedee;
+    background-color: #ffffff;
 
 	.breadcrumb-item a {
 		color: #0081b9;
