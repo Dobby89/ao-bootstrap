@@ -5,11 +5,12 @@
 	},
 
 	"layout": [{
-		"sectionId": "navbar",
 		"templateId": "navbar"
 	},
 	{
-		"sectionId": "buttons",
+		"templateId": "typography"
+	},
+	{
 		"templateId": "buttons"
 	}]
 }
