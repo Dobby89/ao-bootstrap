@@ -1,0 +1,39 @@
+{
+	"config": {
+		"lang": "en-GB",
+		"title": "AO Bootstrap"
+	},
+	"layout": [{
+		"templateId": "navbar"
+	},
+	{
+		"templateId": "colours"
+	},
+	{
+		"templateId": "buttons"
+	},
+	{
+		"templateId": "typography"
+	},
+	{
+		"templateId": "forms"
+	},
+	{
+		"templateId": "navs"
+	},
+	{
+		"templateId": "indicators"
+	},
+	{
+		"templateId": "progress"
+	},
+	{
+		"templateId": "containers"
+	},
+	{
+		"templateId": "dialogs"
+	},
+	{
+		"templateId": "tables"
+	}]
+}

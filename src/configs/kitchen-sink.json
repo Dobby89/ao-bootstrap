@@ -1,9 +1,0 @@
-{
-	"config": {
-		"lang": "en-GB",
-		"title": "AO Bootstrap"
-	},
-	"layout": [{
-		"templateId": "kitchen-sink"
-	}]
-}
